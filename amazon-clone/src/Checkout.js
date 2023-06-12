@@ -21,8 +21,9 @@ export default function Checkout() {
                     Your shopping Basket
                 </h2>
 
-                {basket.map(item => (
+                {basket.map((item,idx) => (
                     <CheckoutProduct 
+                    key={idx}
                     id={item.id}
                     title={item.title}
                     image={item.image}
